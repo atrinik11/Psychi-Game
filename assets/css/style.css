@@ -17,7 +17,7 @@
   padding:5px;
   color: linear-gradient(to right, grey, lightgrey);
   text-align:center;
-}
+  }
 .row{
   background: linear-gradient(to right, pink, purple);
   height:auto;
@@ -34,7 +34,7 @@
   text-shadow:cloudflare;
 }
 .pop h1, h2, h3{
-  text-shadow: 4px 2px 4px #000000;
+  text-shadow: 4px 2px 4px #2e2d2d;
   text-size:30px;
   color:grey;
 }
