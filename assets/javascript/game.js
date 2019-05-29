@@ -21,16 +21,16 @@
        cap3 = letterGuessed.toUpperCase();
 
   //Declaring variables for message to be displayed.
-      var dis = "<p> Computer chose: " + cap2 + "</p> <br> <h2> Hey you won!!</h2>";
-      var dis1 = "<p> Computer chose: " + cap2 + "</p> <br> <h3> Hey you lost...don't lose hope..try again!!</h3>";
+      var displayWinResult = "<p> Computer chose: " + cap2 + "</p> <br> <h2> Hey you won!!</h2>";
+      var displayLostResult = "<p> Computer chose: " + cap2 + "</p> <br> <h3> Hey you lost...don't lose hope..try again!!</h3>";
 
 
   //creating a function for win and loss
       function win() {
-          document.querySelector(".pop").innerHTML = dis;
+          document.querySelector(".result").innerHTML = displayWinResult;
       }
       function loss() {
-          document.querySelector(".pop").innerHTML = dis1;
+          document.querySelector(".result").innerHTML = displayLostResult;
       }
 
   //checking which key the user has pressed............................
@@ -76,7 +76,7 @@
             losses = 0;
             guessLeft = 10;
             cap3 = "";
-            document.querySelector(".pop").innerHTML = "<h1>Game Over!!</h1>";
+            document.querySelector(".result").innerHTML = "<h1>Game Over!!</h1>";
           }
 
 
